@@ -35,10 +35,13 @@
     var numberDisplay = document.getElementById("numberDisplay");
 
     // Function to handle subtraction
+      // Function to handle subtraction
     function subtractNumber() {
-      number -= 0; // Subtract 1 from the current number
-      numberDisplay.innerText = number; // Update the number display
-    }
+  if (number > 0) {
+    number -= 1; // Subtract 1 from the current number
+    numberDisplay.innerText = number; // Update the number display
+  }
+}
 
     // Function to handle addition
     function addNumber() {
