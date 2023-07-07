@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example</title>
+  <style>
+    #container {
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+      margin: 20px auto;
+      
+    }
+
+    .number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: rgb(86, 80, 173);
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <button id="subtractBtn" onclick="subtractNumber()">-</button>
+    <div id="numberDisplay" class="number">0</div>
+    <button id="addBtn" onclick="addNumber()">+</button>
+  </div>
+
+  <script>
+    var number = 0; // Initial number
+    var numberDisplay = document.getElementById("numberDisplay");
+
+    // Function to handle subtraction
+    function subtractNumber() {
+      number -= 0; // Subtract 1 from the current number
+      numberDisplay.innerText = number; // Update the number display
+    }
+
+    // Function to handle addition
+    function addNumber() {
+      number += 1; // Add 1 to the current number
+      numberDisplay.innerText = number; // Update the number display
+    }
+  </script>
+</body>
+</html>
